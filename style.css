@@ -289,8 +289,6 @@ main {
     }
 }
 
-
-
 /* Plants Lover Section */
 
 .badge-img{
@@ -413,10 +411,13 @@ main {
         max-width: 360px;
     }
 }
+/* main 3 end */
 
+/* main 4 start */
 .main-4{
     width: 90%;
     margin: 0 auto;
+    
     margin-top: 50px;
     display: flex;
     gap: 30px;
@@ -438,21 +439,24 @@ main {
 .zabo-img{
     width: 100%;
     border-radius: 10px;
-    height: 100%;  
+        height: 100%;
+    
 }
 
 .bloom-div-1,.bloom-div-2{
     position: relative;
     overflow: hidden;
     width: 100%;
+    /* max-height: 290px; */
     height: 220px;
+    /* height: 184px; */
 }
 
 .bloom-div-3{
     position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 205px;
+        overflow: hidden;
+        width: 100%;
+        height: 205px;
 }
 .overly{
     position: absolute;
@@ -466,6 +470,7 @@ main {
     
 }
 .content-div{
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -475,16 +480,20 @@ main {
     
 }
 .bloom-h1{
+    text-align: center;
+    /* text-align: center;  
+      width: 300px; */
+      width: 100%;
     font-size: 1.3rem;
     font-weight: bold;
-    text-align: center;
    
 }
 .bloom-h2{
-    font-size: 1rem;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 10px;
+    
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 10px;
         
 }
 .shop-now-a{
@@ -499,20 +508,21 @@ main {
     /* max-width: 270px; */
     font-size: 2.5rem;
     font-weight: bold;
+    text-align: center;
 
 }
 
 .zabo-h2 {
 
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     margin-top: 10px;
 
 }
 
 @media screen and (max-width:576px){
-    .main-4{
+    .main-4 {
         width: 90%;
         margin: 0 auto;
         margin-top: 50px;
@@ -521,18 +531,18 @@ main {
         gap: 30px;
     }
 
-    .bloom-h1{
+    .bloom-h1 {
         font-size: 1.3rem;
         min-width: 270px;
         text-align: center;
         font-weight: bold;
     }
-    
-    .bloom-div-3{
+
+    .bloom-div-3 {
         height: 210px;
     }
 
-    .zabo-h1{
+    .zabo-h1 {
         min-width: 270px;
         font-size: 1.3rem;
         font-weight: bold;
@@ -549,6 +559,7 @@ main {
     .overly {
         opacity: 60%;
     }
+
 }
 
 /* Newsletter Section Styles */
@@ -573,8 +584,8 @@ main {
 }
 
 input{
-  width: 640px;
-  padding: 12px 25px;
+    width: 640px;
+    padding: 12px 25px;
 }
 
 .footer-1-btn{
@@ -607,3 +618,185 @@ input{
 
 
 /* Footer Section Styles */
+
+.footer{
+    width: 100%;
+}
+
+.footer-sec{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo{
+    width: 135px;
+    height: 82px;
+}
+
+.footer-logo-p{
+    max-width: 340px;
+    font-size: 1.5rem;
+    color: #000000;
+    opacity: 50%;
+}
+
+.footer-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 248px;
+}
+
+.footer-li{
+    list-style: none;
+}
+
+.link{
+    color: gray;
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between; 
+    gap: 15px;
+    max-width: 216px;
+    align-items: center;
+    height: fit-content;
+}
+
+.social {
+    height: auto;
+    width: 36px; 
+}
+
+.social-media a {
+    display: flex;
+    text-decoration: none; 
+
+}
+
+.social-media a:hover img.social {
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+}
+ 
+@media screen and (max-width:576px){
+    .footer-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .footer-ul{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer-logo {
+        width: 180px;
+        height: 105px;
+    }
+}
+
+
+
+
+
+
+.footer-section {
+    background-color: #f8f8f8; /* Light gray background */
+    padding: 40px 20px;
+    border-top: 1px solid #eee;
+    height: 348px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px; /* Space between columns */
+}
+
+.footer-left {
+    flex: 2; /* Takes more space */
+    min-width: 250px;
+}
+
+.footer-left .logo img {
+    height: 50px; /* Adjust logo size */
+    margin-bottom: 15px;
+}
+
+.footer-left p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.footer-middle,
+.footer-right {
+    flex: 1; /* Takes equal space */
+    min-width: 150px;
+}
+
+.footer-middle ul,
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-middle ul li,
+.footer-right ul li {
+    margin-bottom: 10px;
+}
+
+.footer-middle ul li a,
+.footer-right ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.footer-middle ul li a:hover,
+.footer-right ul li a:hover {
+    color: #ff8c00; /* Orange hover color */
+}
+
+.footer-social {
+    flex: 1;
+    min-width: 150px;
+    display: flex;
+    justify-content: flex-end; /* Align social icons to the right within their flex container */
+    align-items: flex-start; /* Align to the top of the container */
+    gap: 10px;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e0e0e0; /* Light gray background for icons */
+    color: #555;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #ff8c00; /* Orange on hover */
+    color: white;
+}
