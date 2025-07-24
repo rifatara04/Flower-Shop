@@ -297,18 +297,28 @@ main {
     width: 290px;
     height: 290px;
     box-shadow: #ffffff;
+    animation: spin 5s linear infinite;
 }
 
-.main-2{
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.lover{
     display: flex;
     gap: 40px;
     margin-top: 150px;
 }
-.main2-div-1{
+.lover2-div-1{
     width: 50%;
     position: relative;
 }
-.main-2-img {
+.lover-img {
     width: 100%;
 }
 .badge-img{
@@ -334,30 +344,32 @@ main {
     opacity: 50%;
 }
 
-
-.main2-div-2{
+.lover2-div-2{
     display: flex;
     flex-direction: column;
     width: 50%;
-   
+
 }
-.main2-div-2-child {
+
+.lover2-div-2-child {
     margin: auto 0;
 }
-.main2-div-1{
+
+.lover2-div-1{
     width: 50%;
 }
+
 @media screen and (max-width:576px){
     .badge-img{
         display: none;
     }
-    .main-2{
+    .lover{
         flex-direction: column;
     }
-    .main2-div-1 {
+    .lover2-div-1 {
         width: 100%;
     }
-    .main2-div-2 {
+    .lover2-div-2 {
         width: 100%;
     }
     .div-2-h1{
@@ -368,7 +380,6 @@ main {
         max-width: 300px;
     }
 }
-
 
 /* Latest Deals Section */
 .main-3{
@@ -402,9 +413,7 @@ main {
         max-width: 360px;
     }
 }
-/* main 3 end */
 
-/* main 4 start */
 .main-4{
     width: 90%;
     margin: 0 auto;
@@ -429,24 +438,21 @@ main {
 .zabo-img{
     width: 100%;
     border-radius: 10px;
-        height: 100%;
-    
+    height: 100%;  
 }
 
 .bloom-div-1,.bloom-div-2{
     position: relative;
     overflow: hidden;
     width: 100%;
-    /* max-height: 290px; */
     height: 220px;
-    /* height: 184px; */
 }
 
 .bloom-div-3{
     position: relative;
-        overflow: hidden;
-        width: 100%;
-        height: 205px;
+    overflow: hidden;
+    width: 100%;
+    height: 205px;
 }
 .overly{
     position: absolute;
@@ -469,17 +475,16 @@ main {
     
 }
 .bloom-h1{
-    /* max-width: 270px; */
     font-size: 1.3rem;
     font-weight: bold;
+    text-align: center;
    
 }
 .bloom-h2{
-    
-        font-size: 1rem;
-        font-weight: 700;
-        text-align: center;
-        margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
         
 }
 .shop-now-a{
@@ -507,62 +512,43 @@ main {
 }
 
 @media screen and (max-width:576px){
-    .main-4 {
-            width: 90%;
-            margin: 0 auto;
-            border: 1px solid black;
-    
-            margin-top: 50px;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-                /* .bloom-div-1,
-                .bloom-div-2
-                 {
-                    position: relative;
-                    overflow: hidden;
-                    width: 100%;
-                  
-                } */
-          .bloom-h1 {
-              /* max-width: 270px; */
-              font-size: 1.3rem;
-              min-width: 270px;
-              text-align: center;
-              font-weight: bold;
-    
-          }
+    .main-4{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 
-                .bloom-div-3 {
-        
-                    height: 210px;
-                }
+    .bloom-h1{
+        font-size: 1.3rem;
+        min-width: 270px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .bloom-div-3{
+        height: 210px;
+    }
 
-         .zabo-h1 {
-             min-width: 270px;
-             font-size: 1.3rem;
-             font-weight: bold;
-             text-align: center;
+    .zabo-h1{
+        min-width: 270px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+    }
     
-         }
-    
-         .zabo-h2 {
-    
-             font-size: 1rem;
-             font-weight: 700;
-             text-align: center;
-             margin-top: 10px;
-    
-         }
+    .zabo-h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 10px;
+    }
 
-        .overly {
-        
-            opacity: 60%;
-            
-    
-        }
-
+    .overly {
+        opacity: 60%;
+    }
 }
 
 /* Newsletter Section Styles */
@@ -575,50 +561,48 @@ main {
     color: white;
     margin-top: 50px;
     display: flex;
-    /* justify-content: center;
-    justify-items: center;
-    align-items: center; */
- }
+}
 
- .footer-1-div{
+.footer-1-div{
     margin: auto auto;
  }
- .footer-1-h1{
+.footer-1-h1{
     font-size: 3.2rem;
     font-weight: bold;
     text-align: center;
- }
+}
 
- input{
+input{
   width: 640px;
   padding: 12px 25px;
-  
-    /* padding: 12px 25px; */
- }
+}
 
- .footer-1-btn{
+.footer-1-btn{
     padding: 13.5px 25px;
     margin-left: -10px;
     background-color: #E95A08;
     border: none;
- }
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
 
- @media screen and (max-width:576px){
-    .footer-1-h1 {
-            font-size: 1.3rem;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 15px;
-        }
-           .footer-1-div {
-             transform: translateY(25px);
-           }
-        input{
-            max-width: 218px;
-        }
-        .footer-1{
-            height: 275px;
-        }
+@media screen and (max-width:576px){
+    .footer-1-h1{
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .footer-1-div {
+        transform: translateY(25px);
+    }
+    input{
+        max-width: 218px;
+    }
+    .footer-1{
+        height: 275px;
+    }
  }
 
 
