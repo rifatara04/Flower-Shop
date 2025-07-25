@@ -270,13 +270,14 @@ main {
     padding: 15px ;
     color: #ffffff;
     border: none;
-    /* Adding a smooth transition for the hover effect */
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .card-btn:hover {
-    background-color: #c9220c; /* A slightly darker shade of the original orange */
-    cursor: pointer; /* Indicates it's clickable */
+    font-weight: bold;
+    background-color: #c9220c;
+    cursor: pointer; 
 }
 
 @media screen and (max-width:576px){
@@ -380,7 +381,7 @@ main {
 }
 
 /* Latest Deals Section */
-.main-3{
+.latest{
     width: 90%;
     margin: 50px auto;
     display: flex;
@@ -391,28 +392,28 @@ main {
 .Latest{
     color: #E95A08;
 }
-.main-3-p{
+.latest-p{
     max-width: 780px;
     text-align: center;
     font-size: 1.4rem;
     color: #000000;
     opacity: 50%;
 }
-.main-3-h1{
+.latest-h1{
     font-weight: bold;
     font-size: 4.2rem;
 }
 @media screen and (max-width:576px){
-    .main-3-h1{
+    .latest-h1{
         font-size: 1.5rem;
     }
-    .main-3-p{
+    .latest-p{
         font-size: 0.8rem;
         max-width: 360px;
     }
 }
 
-.main-4{
+.deal{
     width: 90%;
     margin: 0 auto;
     
@@ -420,13 +421,13 @@ main {
     display: flex;
     gap: 30px;
 }
-.main-4-sec-1{
+.deal-sec-1{
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-.main-4-sec-2{
+.deal-sec-2{
     flex: 2;
 }
 .bloom-img{
@@ -480,7 +481,6 @@ main {
     width: 100%;
     font-size: 1.3rem;
     font-weight: bold;
-   
 }
 .bloom-h2{
     font-size: 1rem;
@@ -491,6 +491,10 @@ main {
 
 .shop-now-a{
     color: white;
+}
+.shop-now-a:hover{
+    font-weight: bold;
+    color: #c9220c;
 }
 .bloom-div-3{
     
@@ -513,7 +517,7 @@ main {
 }
 
 @media screen and (max-width:576px){
-    .main-4 {
+    .deal {
         width: 90%;
         margin: 0 auto;
         margin-top: 50px;
@@ -555,7 +559,7 @@ main {
 
 /* Newsletter Section Styles */
 
-.footer-1{
+.newsletter{
     background-image: url(assets/news-letter-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -565,10 +569,10 @@ main {
     display: flex;
 }
 
-.footer-1-div{
+.newsletter-div{
     margin: auto auto;
  }
-.footer-1-h1{
+.newsletter-h1{
     font-size: 3.2rem;
     font-weight: bold;
     text-align: center;
@@ -579,7 +583,7 @@ input{
     padding: 12px 25px;
 }
 
-.footer-1-btn{
+.newsletter-btn{
     padding: 13.5px 25px;
     margin-left: -10px;
     background-color: #E95A08;
@@ -588,21 +592,25 @@ input{
     color: white;
     font-weight: bold;
 }
+.newsletter-btn:hover{
+    font-weight: bold;
+    background-color: #c9220c;
+}
 
 @media screen and (max-width:576px){
-    .footer-1-h1{
+    .newsletter-h1{
         font-size: 1.3rem;
         font-weight: bold;
         text-align: center;
         margin-bottom: 15px;
     }
-    .footer-1-div {
+    .newsletter-div {
         transform: translateY(25px);
     }
     input{
         max-width: 218px;
     }
-    .footer-1{
+    .newsletter{
         height: 275px;
     }
  }
