@@ -204,12 +204,13 @@ main {
     text-align: center;
 }
 
-.plant-1-p {
+.main-sec-1-p {
+    /* max-width: 780px; */
     font-size: 1.4rem;
     margin-top: 10px;
     color: #000000;
     opacity: 50%;
-    max-width: 780px;
+    max-width: 860px;
     margin: 0 auto;
 }
 
@@ -217,6 +218,7 @@ main {
     font-size: 3.2rem;
     font-weight: bold;
     font-family: 'Noto Serif', serif; /* Applied Noto Serif here */
+    color: black;
 }
 
 .our {
@@ -224,8 +226,25 @@ main {
 }
 
 @media screen and (max-width:576px) {
+        .main-sec-1{
+        padding: 0 10px;
+    }
+
+    .plant-1{
+        margin-top: 50px;
+    }
+    .plant-1-h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
     .h-p {
         display: none;
+    }
+
+    .main-sec-1-p {
+        font-size: 0.9rem;
+        max-width: 360px;
     }
 }
 
@@ -297,6 +316,10 @@ main {
     height: 290px;
     box-shadow: #ffffff;
     animation: spin 5s linear infinite;
+    /* box-shadow:0 4px 8px rgba(225,225,225); */
+    filter: drop-shadow(0px 5px 5px);
+    /* margin-top: -100px; */
+    animation-timing-function: linear;
 }
 
 @keyframes spin {
@@ -329,6 +352,8 @@ main {
     font-size: 4.2rem;
     font-weight: bold;
     max-width: 540px;
+    font-family: 'Noto Serif', serif;
+    color: black;
 }
 
 .div-2-ul{
@@ -347,7 +372,6 @@ main {
     display: flex;
     flex-direction: column;
     width: 50%;
-
 }
 
 .lover2-div-2-child {
@@ -402,6 +426,8 @@ main {
 .latest-h1{
     font-weight: bold;
     font-size: 4.2rem;
+    font-family: 'Noto Serif', serif;
+    color: black;
 }
 @media screen and (max-width:576px){
     .latest-h1{
@@ -416,7 +442,6 @@ main {
 .deal{
     width: 90%;
     margin: 0 auto;
-    
     margin-top: 50px;
     display: flex;
     gap: 30px;
@@ -481,6 +506,7 @@ main {
     width: 100%;
     font-size: 1.3rem;
     font-weight: bold;
+    font-family: 'Noto Serif', serif;
 }
 .bloom-h2{
     font-size: 1rem;
@@ -505,6 +531,7 @@ main {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
+    font-family: 'Noto Serif', serif;
 
 }
 
@@ -554,7 +581,6 @@ main {
     .overly {
         opacity: 60%;
     }
-
 }
 
 /* Newsletter Section Styles */
@@ -576,6 +602,7 @@ main {
     font-size: 3.2rem;
     font-weight: bold;
     text-align: center;
+    font-family: 'Noto Serif', serif;
 }
 
 input{
@@ -614,7 +641,6 @@ input{
         height: 275px;
     }
  }
-
 
 /* Footer Section Styles */
 
@@ -718,6 +744,11 @@ input{
         height: 105px;
         /* Ensure transition is also applied for smaller screens */
         transition: transform 0.2s ease-in-out;
+    }
+
+    .footer-logo-p{
+        font-size: 0.9rem;
+        max-width: 360px;
     }
 
     .footer-logo:hover {
